@@ -16,5 +16,4 @@ Refer to [node-tradfri setup instructions](https://github.com/morzzz007/node-tra
 ```
 
 1. Run npm install in root folder & client and server folder
-1. Run server from server folder with `npm start`.
-1. Run client from client folder with `npm start`.
+1. Run server & client from root with `SERVER_URL=PUBLIC_IP npm start` (where PUBLIC_IP is e.g. your local server ip, otherwise localhost is used)

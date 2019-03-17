@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { debounce } from "debounce";
 
-const SERVER_URL = "http://localhost:8081";
+const SERVER_URL = `http://${process.env.SERVER_URL || 'localhost'}:8081`;
+console.log("server url", SERVER_URL);
 
 const COLD_WARM_COLORS = ["f5faf6", "f1e0b5", "efd275"];
 const RGB_COLORS = [
